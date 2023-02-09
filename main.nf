@@ -79,6 +79,7 @@ process gwas_filtering {
     --pheno-name ${params.phenoCol} \
     --allow-no-sex \
     --test-missing midp \
+    --double-id \
     --out ${name} \
     --1 \
     --keep-allele-order \
@@ -94,6 +95,7 @@ process gwas_filtering {
     --allow-no-sex \
     --hwe ${params.thres_HWE} midp \
     --out ${name}.misHWEfiltered \
+    --double-id \
     --make-just-bim \
     --exclude ${name}.missing_FAIL \
     --1 \
